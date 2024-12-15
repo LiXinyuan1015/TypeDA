@@ -1,0 +1,10 @@
+torch==1.13.0
+transformers==4.37.2
+openai==1.57.4
+tqdm==4.65.0
+spacy==3.8.2
+en-core-web-sm==3.8.0
+scikit-learn==1.2.2
+errant==3.0.0
+Levenshtein==0.26.1
+numpy==1.23.2

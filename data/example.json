@@ -1,0 +1,688 @@
+[
+    {
+        "id": 0,
+        "masked_text": "Local transportation is one of the most <mask> problem in our area .",
+        "masking_fill": "Local transportation is one of the most problem in our area .",
+        "explanation": "An adjective should be used after \"most\" and before a noun, so we can delete the <mask> to make a missing adjective error",
+        "error_type": "M:ADJ"
+    },
+    {
+        "id": 1,
+        "masked_text": "The next <mask> days I did n't do much .",
+        "masking_fill": "The next days I did n't do much .",
+        "explanation": "We can delete the <mask> that should be an adjective originally to make a missing adjective sentence as it lacks a descriptive adjective to specify the time frame more clearly.",
+        "error_type": "M:ADJ"
+    },
+    {
+        "id": 2,
+        "masked_text": "Save some nature for the earth , and leave <mask> air for our kids .",
+        "masking_fill": "Save some nature for the earth , and leave clear air for our kids .",
+        "explanation": "From the context we can see it should be clean air, so we can use a similar confusing adjective \"clear\" to make a wrong adjective error.",
+        "error_type": "R:ADJ"
+    },
+    {
+        "id": 3,
+        "masked_text": "I enjoyed the best breathing <mask> air and taking pleasure the countryside .",
+        "masking_fill": "I enjoyed the best breathing pure air and taking pleasure the countryside .",
+        "explanation": "Air should be described as fresh instead of pure, so we can replace the <mask> with adjective \"pure\" to make a wrong adjective error",
+        "error_type": "R:ADJ"
+    },
+    {
+        "id": 4,
+        "masked_text": "Anyone in the world has a <mask> goal for the future .",
+        "masking_fill": "Anyone in the world has a future goal for the future .",
+        "explanation": "\"For the future\" has already described that this is a future goal, so we can replace the <mask> with adjective \"future\" to make it repetitive as an unnecessary adjective error",
+        "error_type": "U:ADJ"
+    },
+    {
+        "id": 5,
+        "masked_text": "The space is about 100 m^2 and it has <mask> automatic doors for entry and exit .",
+        "masking_fill": "The space is about 100 m^2 and it has different automatic doors for entry and exit .",
+        "explanation": "Doors for entry and exit can describe the difference, so we can replace the <mask> with similar adjective like \"different\" to make it repetitive as an unnecessary adjective error.",
+        "error_type": "U:ADJ"
+    },
+    {
+        "id": 6,
+        "masked_text": "I feel really <mask> to see this movie .",
+        "masking_fill": "I feel really boring to see this movie .",
+        "explanation": "We use \"boring\" to describe something that causes boredom and \"bored\" to describe the speaker's feeling of uninterest, thus fill \"bor\" and \"ing\" instead of \"ed\" can cause a wrong adjective form error",
+        "error_type": "R:ADJ:FORM"
+    },
+    {
+        "id": 7,
+        "masked_text": "I am <mask> in this <mask> movie .",
+        "masking_fill": "I am interesting in this scared movie .",
+        "explanation": "Ing should be used to describe the objective and ed should be used to describe human's feeling, so we can change the affixes of adjectives like -ing and -ed to make a wrong adjective form error.",
+        "error_type": "R:ADJ:FORM"
+    },
+    {
+        "id": 8,
+        "masked_text": "He <mask> <mask> to give the guy some money .",
+        "masking_fill": "He turned to give the guy some money .",
+        "explanation": "We need an adverb after the verb \"turned\", so we can delete the latter <mask> to make a missing adverb error.",
+        "error_type": "M:ADV"
+    },
+    {
+        "id": 9,
+        "masked_text": "It 's April now , and spring is <mask> <mask> .",
+        "masking_fill": "It 's April now , and spring is finally .",
+        "explanation": "We can delete the latter <mask> to make the sentence unfinished as a missing adverb error.",
+        "error_type": "M:ADV"
+    },
+    {
+        "id": 10,
+        "masked_text": "My friends have bought tickets to Sochi <mask> .",
+        "masking_fill": "My friends have bought tickets to Sochi yet .",
+        "explanation": "Yet should be used in negative sentences so we can use it in a positive sentence to make a wrong adverb error.",
+        "error_type": "R:ADV"
+    },
+    {
+        "id": 11,
+        "masked_text": "So now we can throw our litters <mask> whenever we are .",
+        "masking_fill": "So now we can throw our litters back whenever we are .",
+        "explanation": "\"Throw away\" is a fixed match so we can replace <mask> with another adverb like \"back\" to make a wrong adverb error.",
+        "error_type": "R:ADV"
+    },
+    {
+        "id": 12,
+        "masked_text": "Transport is <mask> <mask> in our lives .",
+        "masking_fill": "Transport is significantly important in our lives .",
+        "explanation": "The adjective important has already describe the importance of the transport, so we can add an adverb that has a similar meaning to make an unnecessary adverb error.",
+        "error_type": "U:ADV"
+    },
+    {
+        "id": 13,
+        "masked_text": "He is <mask> a good lawyer <mask> .",
+        "masking_fill": "He is currently a good lawyer now  .",
+        "explanation": "Currently and now has the same meaning to describe the time state, so we can repetitively use them to make an unnecessary adverb error.",
+        "error_type": "U:ADV"
+    },
+    {
+        "id": 14,
+        "masked_text": "I am trying my best <mask> hope I will pass my course and get a good job .",
+        "masking_fill": "I am trying my best hope I will pass my course and get a good job .",
+        "explanation": "A conjunction should be used between the verbs so we can delete <mask> that should be a conjunction to make a missing conjunction error.",
+        "error_type": "M:CONJ"
+    },
+    {
+        "id": 15,
+        "masked_text": "He goes to his first day at school, <mask> there he is captured by a man .",
+        "masking_fill": "he goes to his first day at school , there he is captured by a man .",
+        "explanation": "A conjunction should be used between the two sentences so we can delete <mask> that should be a conjunction to make a missing conjunction error.",
+        "error_type": "M:CONJ"
+    },
+    {
+        "id": 16,
+        "masked_text": "Personally , I use public transport more <mask> I hardly ever use private transport .",
+        "masking_fill": "Personally , I use public transport more between I hardly ever use private transport .",
+        "explanation": "A conjunction should be used between the two sentences so we can replace <mask> with semantically incorrect conjunction to make a wrong conjunction error.",
+        "error_type": "R:CONJ"
+    },
+    {
+        "id": 17,
+        "masked_text": "The tourist will never be bored <mask> will have a lot of time to visit the city .",
+        "masking_fill": "The tourist will never be bored but will have a lot of time to visit the city .",
+        "explanation": "A conjunction should be used between the verbs so we can replace <mask> with semantically incorrect conjunction to make a wrong conjunction error.",
+        "error_type": "R:CONJ"
+    },
+    {
+        "id": 18,
+        "masked_text": "<mask> some people prefer individual games , <mask> I prefer team games .",
+        "masking_fill": "Although some people prefer individual games , but I prefer team games .",
+        "explanation": "\"Although\" and \"but\" can not be used together in one sentence, so we can use them together to make an unnecessary conjunction error.",
+        "error_type": "U:CONJ"
+    },
+    {
+        "id": 19,
+        "masked_text": "<mask> <mask> you are smart, <mask> you still need to study hard .",
+        "masking_fill": "Even though you are smart, but you still need to study hard .",
+        "explanation": "\"Even though\" and \"but\" can not be used together in one sentence, so we can use them together to make an unnecessary conjunction error.",
+        "error_type": "U:CONJ"
+    },
+    {
+        "id": 20,
+        "masked_text": "I <mask> tell you later .",
+        "masking_fill": "I tell you later .",
+        "explanation": "A contraction of modal verb should be used so we can delete <mask> to make a missing contraction error.",
+        "error_type": "M:CONTR"
+    },
+    {
+        "id": 21,
+        "masked_text": "You <mask> welcome , I <mask> be very happy to put you up .",
+        "masking_fill": "You welcome , I be very happy to put you up .",
+        "explanation": "A contraction of modal verb should be used so we can delete <mask> to make a missing contraction error.",
+        "error_type": "M:CONTR"
+    },
+    {
+        "id": 22,
+        "masked_text": "I <mask> do my homework tomorrow .",
+        "masking_fill": "I 'ill do my homework tomorrow .",
+        "explanation": "When we should fill the <mask> with contractions, we can change the contraction to something wrong to make a wrong contraction error.",
+        "error_type": "R:CONTR"
+    },
+    {
+        "id": 23,
+        "masked_text": "You can <mask> ride a motorcycle without a helmet .",
+        "masking_fill": "You can 'nt ride a motorcycle without a helmet .",
+        "explanation": "When we should fill the <mask> with contractions, we can change the contraction to something wrong to make a wrong contraction error.",
+        "error_type": "R:CONTR"
+    },
+    {
+        "id": 24,
+        "masked_text": "I <mask> <mask> do my homework tomorrow .",
+        "masking_fill": "I will 'll do my homework tomorrow .",
+        "explanation": "\"'ll\" is the contraction of \"will\" so we can repetitively use them to make an unnecessary contraction error. ",
+        "error_type": "U:CONTR"
+    },
+    {
+        "id": 25,
+        "masked_text": "It <mask> <mask> actually reminding me of my favorite video game .",
+        "masking_fill": "It 's does actually reminding me of my favorite video game .",
+        "explanation": "Is and does can not be used together so we can use them the same time and change one of it to contraction form to make an unnecessary contraction error .",
+        "error_type": "U:CONTR"
+    },
+    {
+        "id": 26,
+        "masked_text": "<mask> the other hand , they might want to safeguard the national image .",
+        "masking_fill": "the other hand , they might want to safeguard the national image .",
+        "explanation": "\"On the other hand\" is a fixed match so we can delete the determiner to make a missing determiner error.",
+        "error_type": "M:DET"
+    },
+    {
+        "id": 27,
+        "masked_text": "<mask> people want to be a doctor , others want to be a teacher .",
+        "masking_fill": "People want to be a doctor , others want to be a teacher .",
+        "explanation": "There should be a determiner before the subject or general noun, so we can delete the determiner <mask> to make a missing determiner error.",
+        "error_type": "M:DET"
+    },
+    {
+        "id": 28,
+        "masked_text": "<mask> the other hand , they might want to safeguard the national image .",
+        "masking_fill": "In the other hand , they might want to safeguard the national image .",
+        "explanation": "\"On the other hand\" is a fixed match so we can change determiner \"on\" to \"in\" to make a missing determiner error.",
+        "error_type": "R:DET"
+    },
+    {
+        "id": 29,
+        "masked_text": "<mask> <mask> people want to be a doctor , others want to be a teacher .",
+        "masking_fill": "Some many people want to be a doctor , others want to be a teacher .",
+        "explanation": "A determiner is enough for a subject or general noun, so we can add another determiner to make a repetitive determiner error.",
+        "error_type": "R:DET"
+    },
+    {
+        "id": 30,
+        "masked_text": "I want to be fit and have <mask> good health .",
+        "masking_fill": "I want to be fit and have a good health .",
+        "explanation": "Health is uncountable so we can add a quantity determiner like \"a\" to make an unnecessary determiner error.",
+        "error_type": "U:DET"
+    },
+    {
+        "id": 31,
+        "masked_text": "<mask> scientists are trying to make a cure for the Monsteration Infections",
+        "masking_fill": "The scientists are trying to make a cure for the Monsteration Infections",
+        "explanation": "There is no need to use a determiner before the subject in this situation, so we can add one to make an unnecessary determiner error.",
+        "error_type": "U:DET"
+    },
+    {
+        "id": 32,
+        "masked_text": "It was fun because we <mask> a new hip hop dance and we finished our tap dance .",
+        "masking_fill": "It was fun because we learn a new hip hop dance and we finished our tap dance .",
+        "explanation": "The past tense of the verb should be used so we can change it to the simple form of the verb to make an incorrect morphological form error.",
+        "error_type": "R:MORPH"
+    },
+    {
+        "id": 33,
+        "masked_text": "Other <mask> are , for example , if you travel by car , you can park the car in front of the place where you want to go .",
+        "masking_fill": "Other signals are , for example , if you travel by car , you can park the car in front of the place where you want to go .",
+        "explanation": "\"Signs\" is suitable in the situation, so we can fill the <mask> with similar word like signals to make an incorrect morphological form error. ",
+        "error_type": "R:MORPH"
+    },
+    {
+        "id": 34,
+        "masked_text": "Gorky Park is my favorite place for my leisure <mask> .",
+        "masking_fill": "Gorky Park is my favorite place for my leisure .",
+        "explanation": "Leisure is an adjective that should be followed with a noun, so we can delete the <mask> to make a missing noun error.",
+        "error_type": "M:NOUN"
+    },
+    {
+        "id": 35,
+        "masked_text": "I 'd like to speak about the <mask> <mask> in Egypt .",
+        "masking_fill": "I 'd like to speak about the in Egypt .",
+        "explanation": "\"The\" is a determiner that should be followed with a noun, so we can delete the <mask> to make a missing noun error.",
+        "error_type": "M:NOUN"
+    },
+    {
+        "id": 36,
+        "masked_text": "I 'd like to speak about the education <mask> in Egypt .",
+        "masking_fill": "I 'd like to speak about the education process in Egypt .",
+        "explanation": "According to the semantics, what should be expressed here is education-related content, so we can fill the <mask> with an irrelevant noun to make a wrong noun error.",
+        "error_type": "R:NOUN"
+    },
+    {
+        "id": 37,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "R:NOUN"
+    },
+    {
+        "id": 38,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "U:NOUN"
+    },
+    {
+        "id": 39,
+        "masked_text": "A flat world is created by the internet <mask> .",
+        "masking_fill": "A flat world is created by the internet connection .",
+        "explanation": "Internet is already a complete concept, so we can fill <mask> with other redundant nouns to create an unnecessary noun error.",
+        "error_type": "U:NOUN"
+    },
+    {
+        "id": 40,
+        "masked_text": "They present complex <mask> so smartly that an ignorant fool feels like a sagacious monk , whence he becomes the follower and a voter .",
+        "masking_fill": "They present complex informations so smartly that an ignorant fool feels like a sagacious monk , whence he becomes the follower and a voter .",
+        "explanation": "Information is an uncountable noun, so we can create an inflection error by filling <mask> with the appropriate noun and changing its form",
+        "error_type": "R:NOUN:INFL"
+    },
+    {
+        "id": 41,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "R:NOUN:INFL"
+    },
+    {
+        "id": 42,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "R:NOUN:NUM"
+    },
+    {
+        "id": 43,
+        "masked_text": "You can meet <mask> <mask> of people .",
+        "masking_fill": "You can meet all kind of people .",
+        "explanation": "The noun after all should be plural. We can fill <mask> with singular to create a noun number error.",
+        "error_type": "R:NOUN:NUM"
+    },
+    {
+        "id": 44,
+        "masked_text": "This is <mask> pen .",
+        "masking_fill": "This is I pen .",
+        "explanation": "A possessive case is required before a noun to express ownership, so we can create a possessive missing error by replacing the possessive case with a prototype.",
+        "error_type": "M:NOUN:POSS"
+    },
+    {
+        "id": 45,
+        "masked_text": "But not so many people have a driver <mask> license .",
+        "masking_fill": "But not so many people have a driver license .",
+        "explanation": "There should be an ownership relationship between driver and license, so we can delete <mask> to create a noun possessive missing error.",
+        "error_type": "M:NOUN:POSS"
+    },
+    {
+        "id": 46,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "R:NOUN:POSS"
+    },
+    {
+        "id": 47,
+        "masked_text": "This is <mask> book .",
+        "masking_fill": "This is mine book .",
+        "explanation": "\"Mine\" is a possessive pronoun that should not be used with a noun directly, so we can use it with a noun to make a wrong noun possessive error.",
+        "error_type": "R:NOUN:POSS"
+    },
+    {
+        "id": 48,
+        "masked_text": "I am looking for what is <mask> .",
+        "masking_fill": "I am looking for what is mine's .",
+        "explanation": "Mine already represents possessive, so we can repetitively add the possessive symbol 's to make an unnecessary noun possessive error.",
+        "error_type": "U:NOUN:POSS"
+    },
+    {
+        "id": 49,
+        "masked_text": "He set up a hospital in Kabul to take care of <mask> victims .",
+        "masking_fill": "He set up a hospital in Kabul to take care of my's victims .",
+        "explanation": "My already represents possessive, so we can repetitively add the possessive symbol 's to make an unnecessary noun possessive error.",
+        "error_type": "U:NOUN:POSS"
+    },
+    {
+        "id": 50,
+        "masked_text": "Visiting museums is an <mask> part of their travel to new <mask> for many people .",
+        "masking_fill": "Visiting museums is an esential part of their travel to new pleas for many people .",
+        "explanation": "We can fill the <mask> with fit word and change the order of some letters or delete some letters to make a wrong spelling error.",
+        "error_type": "R:ORTH"
+    },
+    {
+        "id": 51,
+        "masked_text": "I have been <mask> tennis since I was four <mask> old .",
+        "masking_fill": "I have been Playing tennis since I was four Years old .",
+        "explanation": "We can fill the <mask> with fit words and capitalize them to make a wrong spelling error.",
+        "error_type": "R:ORTH"
+    },
+    {
+        "id": 52,
+        "masked_text": "He decided to give <mask> the project .",
+        "masking_fill": "He decided to give the project .",
+        "explanation": "Particle should follow the verb give to make a phrasal verbs, so we can delete the particle's <mask> to make a missing particle error.",
+        "error_type": "M:PART"
+    },
+    {
+        "id": 53,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "M:PART"
+    },
+    {
+        "id": 54,
+        "masked_text": "He decided to give <mask> the project .",
+        "masking_fill": "He decided to give down the project .",
+        "explanation": "Particle \"up\" should follow the verb give to make a fixed match, so we can fill the <mask> with another particle to make a wrong particle error.",
+        "error_type": "R:PART"
+    },
+    {
+        "id": 55,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "R:PART"
+    },
+    {
+        "id": 56,
+        "masked_text": "He decided to give <mask> <mask> the project .",
+        "masking_fill": "He decided to give up on the project .",
+        "explanation": "Particle \"up\" following give can already have a complete meaning, so we can add some other particle to make an unnecessary particle error.",
+        "error_type": "U:PART"
+    },
+    {
+        "id": 57,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "U:PART"
+    },
+    {
+        "id": 58,
+        "masked_text": "It has a high - density population because <mask> its small territory .",
+        "masking_fill": "It has a high - density population because its small territory .",
+        "explanation": "When because is followed by a noun phrase, the preposition \"of\" needs to be added, so we can create a missing preposition error by deleting <mask>.",
+        "error_type": "M:PREP"
+    },
+    {
+        "id": 59,
+        "masked_text": "I should arrive <mask> the school in time .",
+        "masking_fill": "I should arrive the school in time .",
+        "explanation": "We can create a missing preposition error by deleting the preposition after the intransitive verb.",
+        "error_type": "M:PREP"
+    },
+    {
+        "id": 60,
+        "masked_text": "It has a high - density population because <mask> its small territory .",
+        "masking_fill": "It has a high - density population because on its small territory .",
+        "explanation": "Because of is a fixed match, so we can replace <mask> with another preposition to create a wrong preposition error.",
+        "error_type": "R:PREP"
+    },
+    {
+        "id": 61,
+        "masked_text": "I should arrive <mask> the school in time .",
+        "masking_fill": "I should arrive in the school in time .",
+        "explanation": "We should use arrive at when the place is small and arrive in when the place is large. So we can mix the preposition to make a wrong preposition error.",
+        "error_type": "R:PREP"
+    },
+    {
+        "id": 62,
+        "masked_text": "It has a high - density population because <mask> its territory is small .",
+        "masking_fill": "It has a high - density population because of its territory is small .",
+        "explanation": "When because is followed by a complete sentence, the preposition \"of\" can not be added, so we can create an unnecessary preposition error by fill <mask> with preposition when it's not needed.",
+        "error_type": "U:PREP"
+    },
+    {
+        "id": 63,
+        "masked_text": "I should go <mask> home .",
+        "masking_fill": "I should go in home .",
+        "explanation": "There is no need to use a preposition before some noun like home, so we can add a preposition to make an unnecessary preposition error.",
+        "error_type": "U:PREP"
+    },
+    {
+        "id": 64,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "M:PUNCT"
+    },
+    {
+        "id": 65,
+        "masked_text": "It has a high <mask> density population because of its small territory .",
+        "masking_fill": "It has a high density population because of its small territory .",
+        "explanation": "When using a combination of an adjective and a noun to express an adjective, we need to add a punctuation mark - in the middle. We can create a missing punctuation error by deleting the <mask> that should be a punctuation mark.",
+        "error_type": "M:PUNCT"
+    },
+    {
+        "id": 66,
+        "masked_text": "It has a high - density population because of its small territory <mask>",
+        "masking_fill": "It has a high - density population because of its small territory ?",
+        "explanation": "This is a declarative sentence, so we can fill in <mask> with punctuation \"?\" to express questions to create a wrong punctuation error",
+        "error_type": "R:PUNCT"
+    },
+    {
+        "id": 67,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "R:PUNCT"
+    },
+    {
+        "id": 68,
+        "masked_text": "It has a high - density population because of its small territory <mask> <mask>",
+        "masking_fill": "It has a high - density population because of its small territory . ,",
+        "explanation": "A punctuation mark already indicates the end of a sentence. We can fill <mask> with repetitive punctuation to create an unnecessary punctuation error.",
+        "error_type": "U:PUNCT"
+    },
+    {
+        "id": 69,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "U:PUNCT"
+    },
+    {
+        "id": 70,
+        "masked_text": "Some people want to be a <mask> , others <mask> to be a <mask> .",
+        "masking_fill": "Some people want to be a dcotor , others wat to be a techer .",
+        "explanation": "We can fill the <mask> with fit word and change the order of some letters or delete some letters to make a wrong spelling error.",
+        "error_type": "R:SPELL"
+    },
+    {
+        "id": 71,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "R:SPELL"
+    },
+    {
+        "id": 72,
+        "masked_text": "Some people <mask> to be a <mask> , others <mask> to be a <mask> .",
+        "masking_fill": "Some people to be a doctor , others to be a teacher .",
+        "explanation": "A sentence must contain verb so we can delete verb <mask> to make a missing verb error.",
+        "error_type": "M:VERB"
+    },
+    {
+        "id": 73,
+        "masked_text": "Other signs are , for example , if you <mask> by car , you can <mask> the car in front of the place where you want to go .",
+        "masking_fill": "Other signs are , for example , if you by car , you can the car in front of the place where you want to go .",
+        "explanation": "We can delete the verb <mask> to make a missing verb error.",
+        "error_type": "M:VERB"
+    },
+    {
+        "id": 74,
+        "masked_text": "Some people <mask> to be a doctor , others <mask> to be a teacher .",
+        "masking_fill": "Some people run to be a doctor , others swim to be a teacher .",
+        "explanation": "We can replace the verb <mask> with semantically incorrect verb to make a wrong verb error.",
+        "error_type": "R:VERB"
+    },
+    {
+        "id": 75,
+        "masked_text": "Other signals are , for example , if you <mask> by car , you can <mask> the car in front of the place where you want to go .",
+        "masking_fill": "Other signals are , for example , if you move by car , you can stop the car in front of the place where you want to go .",
+        "explanation": "We can fill the verb <mask> with proper verb and change it to the verb that has the similar meaning but unsuitable in this situation.",
+        "error_type": "R:VERB"
+    },
+    {
+        "id": 76,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "U:VERB"
+    },
+    {
+        "id": 77,
+        "masked_text": "They are <mask> <mask> <mask> <mask> <mask> machinists .",
+        "masking_fill": "They are supposed to prepare a skiled machinists .",
+        "explanation": "\"Be supposed to\" is a redundant component, we can add these redundant verbs to make an unnecessary verb error.",
+        "error_type": "U:VERB"
+    },
+    {
+        "id": 78,
+        "masked_text": "You <mask> <mask> for someone to come .",
+        "masking_fill": "You are wait for someone to come .",
+        "explanation": "This is a sentence in progressive tense, so the verb after be needs to be added with ing. We can fill <mask> with a verb base form to create a missing verb form error.",
+        "error_type": "M:VERB:FORM"
+    },
+    {
+        "id": 79,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "M:VERB:FORM"
+    },
+    {
+        "id": 80,
+        "masked_text": "You <mask> <mask> for someone to come .",
+        "masking_fill": "You are waited for someone to come .",
+        "explanation": "This is a sentence in progressive tense, so the verb after be needs to be added with ing. We can fill <mask> with other tenses of a verb to create a wrong verb form error.",
+        "error_type": "R:VERB:FORM"
+    },
+    {
+        "id": 81,
+        "masked_text": "",
+        "masking_fill": "",
+        "explanation": "",
+        "error_type": "R:VERB:FORM"
+    },
+    {
+        "id": 82,
+        "masked_text": "It <mask> <mask> of the oldest and the biggest museums in eastern Poland .",
+        "masking_fill": "It to belong of the oldest and the biggest museums in eastern Poland .",
+        "explanation": "There is no need to use the infinitive of the verb here, so we can make an unnecessary verb form error by replacing <mask> with the infinitive of the verb.",
+        "error_type": "U:VERB:FORM"
+    },
+    {
+        "id": 83,
+        "masked_text": "You <mask> <mask> on your study.",
+        "masking_fill": "You should focuses on your study.",
+        "explanation": "The verb following the modal verb needs a prototype, so we can create a prototype by changing the form of the verb to make an unnecessary verb form error.",
+        "error_type": "U:VERB:FORM"
+    },
+    {
+        "id": 84,
+        "masked_text": "It <mask> me down and freaks me out at the same time .",
+        "masking_fill": "It calmes me down and freaks me out at the same time .",
+        "explanation": "Some verbs require adding s instead of es when changing to the third person singular, or adding es instead of s, so we can change such words to create a verb inflation error.",
+        "error_type": "R:VERB:INFL"
+    },
+    {
+        "id": 85,
+        "masked_text": "I <mask> these things .",
+        "masking_fill": "I thinked these things .",
+        "explanation": "The past tense of think is thought. We can fill in <mask> with general -ed like thinked to create a verb inflation error.",
+        "error_type": "R:VERB:INFL"
+    },
+    {
+        "id": 86,
+        "masked_text": "He <mask> to school every day .",
+        "masking_fill": "He walk to school every day .",
+        "explanation": "In the present simple tense, the verb after the subject of the third person singular needs to add \"s\". We can create a subject-verb agreement error by filling the <mask> with the verb base form without adding s.",
+        "error_type": "R:VERB:SVA"
+    },
+    {
+        "id": 87,
+        "masked_text": "While all the girls were <mask> to Alison , Juan <mask> as a gosh .",
+        "masking_fill": "While all the girls were hearing to Alison , Juan happened as a gosh .",
+        "explanation": "Hear can not be followed by to and happened cant be used to describes, so we can use these improper matched verb to make a subject-verb agreement error.",
+        "error_type": "R:VERB:SVA"
+    },
+    {
+        "id": 88,
+        "masked_text": "The last time he <mask> he had never invited anyone .",
+        "masking_fill": "The last time he remember he had never invited anyone .",
+        "explanation": "This sentence should be in the past tense. We can fill the <mask> with fit verb and remove the past tense of the verb to make a missing verb tense error",
+        "error_type": "M:VERB:TENSE"
+    },
+    {
+        "id": 89,
+        "masked_text": "The more cars on the road , the more greenhouse gases <mask> produced .",
+        "masking_fill": "The more cars on the road , the more greenhouse gases produced .",
+        "explanation": "Here a \"be\" should be used to indicate passive. We can delete this <mask> to make a missing verb tense error.",
+        "error_type": "M:VERB:TENSE"
+    },
+    {
+        "id": 90,
+        "masked_text": "He <mask> to be a doctor , others <mask> to be a teacher .",
+        "masking_fill": "He wants to be a doctor , others wanted to be a teacher .",
+        "explanation": "This sentence should be in the present simple tense and we can change the tense to make a wrong verb tense error.",
+        "error_type": "R:VERB:TENSE"
+    },
+    {
+        "id": 91,
+        "masked_text": "The fact is , he is not the same man I <mask> <mask> and that issue upsets me so much .",
+        "masking_fill": "The fact is , he is not the same man I am marrying and that issue upsets me so much .",
+        "explanation": "This sentence should be in past tense, we can change it to another tense like progressive tense to make a wrong verb tense error.",
+        "error_type": "R:VERB:TENSE"
+    },
+    {
+        "id": 92,
+        "masked_text": "The fact is , he is not the same man I <mask> <mask> and that issue upsets me so much .",
+        "masking_fill": "The fact is , he is not the same man I have married and that issue upsets me so much .",
+        "explanation": "This sentence should be in past tense, we can add a tense determiner like \"have\" to make an unnecessary verb tense error",
+        "error_type": "U:VERB:TENSE"
+    },
+    {
+        "id": 93,
+        "masked_text": "The enemy was eradicated and the rest <mask> <mask> jailed .",
+        "masking_fill": "The enemy was eradicated and the rest were got jailed .",
+        "explanation": "We can use the past tense of a verb twice in a sentence to make an unnecessary verb tense error.",
+        "error_type": "U:VERB:TENSE"
+    },
+    {
+        "id": 94,
+        "masked_text": "Some people want to be a doctor , others want <mask> <mask> a <mask> .",
+        "masking_fill": "Some people want to be a doctor , others want be to a teacher .",
+        "explanation": "We can fill the <mask> with fit words and reverse the order to make a wrong order mistake.",
+        "error_type": "R:WO"
+    },
+    {
+        "id": 95,
+        "masked_text": "She made breakfast for <mask> <mask>. ",
+        "masking_fill": "She made breakfast for us ourselves. ",
+        "explanation": "You can create a pronoun redundant error by adding another pronoun after the pronoun",
+        "error_type": "U:PRON"
+    },
+    {
+        "id": 95,
+        "masked_text": "She made breakfast for <mask>. ",
+        "masking_fill": "She made breakfast for her.  ",
+        "explanation": "A reflexive pronoun should be used here, which can be filled in with a personal pronoun to create a pronoun error",
+        "error_type": "R:PRON"
+    },
+    {
+        "id": 95,
+        "masked_text": "She made breakfast for <mask>. ",
+        "masking_fill": "She made breakfast for .  ",
+        "explanation": "A pronoun should be used after \"for\" to represent the object. You can create a missing pronoun error by directly deleting <mask>",
+        "error_type": "M:PRON"
+    }
+]
